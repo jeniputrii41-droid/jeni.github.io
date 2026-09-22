@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>My Portfolio | Jeni Permata Putri</title>
+
+  <!-- Bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* CARD HAL YANG SAYA SUKA */
+    .favorite-card {
+      height: 100%;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+    }
+
+    .favorite-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .favorite-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .favorite-card .card-body {
+      padding: 20px;
+    }
+
+    .favorite-card .card-text {
+      color: #777;
+      line-height: 1.6;
+    }
+
+    /* JARAK SECTION */
+    section {
+      scroll-margin-top: 80px;
+    }
+
+    /* ABOUT */
+    #about {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    /* PROJECT */
+    #Project {
+      background-color: #f8f9fa;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    /* CONTACT */
+    #contact {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+  <div class="container">
+
+<a class="navbar-brand fw-bold" href="#">Jeni</a>
+
+<button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+
+  <span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+  <ul class="navbar-nav ms-auto">
+
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About Me</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#Project">Hal yang Saya Suka</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#wishlist">Wishlist</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#contact me">Contact Me</a>
+    </li>
+
+
+  </ul>
+
+</div>
+
+  </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="jumbotron text-center pt-5 mt-5">
+
+<img src="img/jeni.jpeg"
+    alt="Jeni"
+    width="200"
+    class="rounded-circle img-thumbnail mt-4" />
+
+  <h1 class="display-4 fw-bold mt-3">
+    Jeni Permata Putri
+  </h1>
+
+  <p class="lead">
+    Pecinta Game | Kulineran
+  </p>
+
+</section>
+
+<!-- ================= ABOUT ME ================= -->
+
+<section id="about">
+
+  <div class="container">
+
+```
+<div class="row text-center mb-4">
+
+  <div class="col">
+
+    <h2 class="fw-bold">
+      About Me
+    </h2>
+
+  </div>
+
+</div>
+
+
+<div class="row justify-content-center text-center">
+
+  <div class="col-md-5">
+
+    <p>
+      Halo! Nama saya Jeni. Saya adalah pribadi yang suka mencoba hal baru,
+      menikmati waktu bersama orang-orang terdekat, dan terus belajar untuk
+      menjadi lebih baik.
+    </p>
+
+  </div>
+
+
+  <div class="col-md-5">
+
+    <p>
+      Saya suka menghabiskan waktu dengan hal-hal yang saya sukai,
+      seperti bermain Free Fire, minum kopi, dan makan makanan enak.
+    </p>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- ================= HAL YANG SAYA SUKA ================= -->
+
+<section id="Project" class="py-5">
+
+  <div class="container">
+
+```
+<div class="text-center mb-5">
+
+  <p class="text-uppercase fw-bold">
+    — Hal yang Saya Suka —
+  </p>
+
+  <h2>Hal yang Membuat Saya Senang</h2>
+
+  <p class="contact-description">
+    Setiap orang memiliki hal-hal sederhana yang membuatnya senang.
+    <br>
+    Berikut beberapa hal yang saya sukai dan sering saya lakukan.
+  </p>
+
+</div>
+
+
+<!-- 3 CARD -->
+
+<div class="row g-4">
+
+  <!-- FREE FIRE -->
+
+  <div class="col-md-4">
+
+    <div class="card favorite-card h-100">
+
+      <img src="img/projects/ff.jpeg"
+           class="card-img-top"
+           alt="Free Fire">
+
+      <div class="card-body">
+
+        <span class="badge bg-danger mb-2">
+          GAME
+        </span>
+
+        <h4>Free Fire</h4>
+
+        <p>
+          Saya suka bermain Free Fire di waktu luang.
+          Bermain game ini menjadi salah satu cara saya
+          untuk bersantai dan menghilangkan rasa bosan.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- KOPI -->
+
+  <div class="col-md-4">
+
+    <div class="card favorite-card h-100">
+
+      <img src="img/projects/kopi.jpeg"
+           class="card-img-top"
+           alt="Kopi">
+
+      <div class="card-body">
+
+        <span class="badge bg-primary mb-2">
+          DRINK
+        </span>
+
+        <h4>Kopi</h4>
+
+        <p>
+          Selain bermain Free Fire, saya juga suka menikmati kopi.
+          Kopi menjadi salah satu minuman favorit saya ketika
+          sedang bersantai dan mempunyai waktu luang.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MAKANAN -->
+
+  <div class="col-md-4">
+
+    <div class="card favorite-card h-100">
+
+      <img src="img/projects/makanan.jpeg"
+           class="card-img-top"
+           alt="Makanan Favorit">
+
+      <div class="card-body">
+
+        <span class="badge bg-warning text-dark mb-2">
+          FOOD
+        </span>
+
+        <h4>Makanan Favorit</h4>
+
+        <p>
+          Saya juga sangat suka makan.
+          Mencoba berbagai macam makanan menjadi salah satu
+          hal sederhana yang bisa membuat saya senang.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================
+       WISHLIST
+  ========================= -->
+
+  <section id="wishlist">
+
+    <div class="container">
+
+      <!-- Judul -->
+      <div class="text-center mb-5">
+
+        <p class="text-uppercase fw-bold" style="color: #e8a0b8;">
+         — MY DREAMS
+        </p>
+        <h2>
+          Wishlist
+        </h2>
+
+        <p>
+          Beberapa hal yang ingin saya miliki,ukan,
+          dan capai di masa yang akan datang.
+        </p>
+
+      </div>
+
+
+      <!-- SEMUA CARD WISHLIST -->
+      <div class="row g-4">
+
+
+        <!-- =====================
+             WISHLIST 1
+        ====================== -->
+
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <img
+              src="img/wishlist/ninja ss.jpeg"
+              class="card-img-top"
+              alt="Kreta Ninja ss"
+            >
+
+            <div class="card-body">
+
+              <span class="badge mb-2">
+                DREAM
+              </span>
+
+              <h4 class="card-title">
+                NINJA SS
+              </h4>
+
+              <p class="card-text">
+                Ninja SS adalah salah satu motor impian saya. Saya ingin suatu saat bisa memiliki Ninja SS sendiri dan merasakan sensasi berkendara dengan motor yang saya idamkan.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             WISHLIST 2
+        ====================== -->
+
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <img
+              src="img/wishlist/fortuner.jpeg"
+              class="card-img-top"
+              alt="Mobil Fortuner"
+            >
+
+            <div class="card-body">
+
+              <span class="badge mb-2">
+                DREAM
+              </span>
+
+              <h4 class="card-title">
+                FORTUNER
+              </h4>
+
+              <p class="card-text">
+               Fortuner adalah salah satu mobil impian saya. Saya ingin suatu saat bisa memiliki Pajero sendiri dan menggunakannya untuk bepergian bersama keluarga maupun orang-orang terdekat.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             WISHLIST 3
+        ====================== -->
+
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <img
+              src="img/wishlist/rx king.jpeg"
+              class="card-img-top"
+              alt="Kreta RX King"
+            >
+
+            <div class="card-body">
+
+              <span class="badge mb-2">
+                DREAM
+              </span>
+
+              <h4 class="card-title">
+               RX KING
+              </h4>
+
+              <p class="card-text">
+                RX King juga menjadi salah satu motor yang ingin saya miliki. Saya suka dengan desain dan karakter motornya, sehingga saya berharap suatu hari bisa punya RX King sendiri.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- ================= CONTACT ME ================= -->
+
+<section id="contact" class="py-5">
+
+  <div class="container">
+
+<!-- Judul -->
+
+<div class="text-center mb-5">
+
+  <!-- SUDAH DIUBAH JADI HITAM -->
+  <p class="text-uppercase fw-bold">
+    — HUBUNGI SAYA —
+  </p>
+
+  <h2 class="fw-bold">
+    Yuk Berkenalan 👋
+  </h2>
+
+  <p class="contact-description">
+    Punya pertanyaan, ingin berbagi cerita, atau sekadar ingin menyapa?
+    <br>
+    Silakan kirim pesan melalui form di bawah ini!
+  </p>
+
+</div>
+
+
+<div class="row g-4 align-items-stretch">
+
+
+  <!-- ================= BAGIAN KIRI ================= -->
+
+  <div class="col-md-5">
+
+    <div class="kenalan-card">
+
+      <h3 class="fw-bold mb-4">
+        Kenalan Yuk! 👋
+      </h3>
+
+      <p>
+        Terima kasih sudah mengunjungi website portfolio saya.
+        Saya senang bisa berbagi sedikit tentang diri saya.
+      </p>
+
+      <div class="mt-4">
+
+        <p>
+          <i class="bi bi-instagram me-2"></i>
+          @jeni.permataputri
+        </p>
+
+        <p>
+          <i class="bi bi-envelope me-2"></i>
+          jeniputrii@email.com
+        </p>
+
+        <p>
+          <i class="bi bi-geo-alt me-2"></i>
+          Medan, Sumatera Utara
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= BAGIAN KANAN ================= -->
+
+  <div class="col-md-7">
+
+    <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+
+      <h3 class="fw-bold mb-4">
+        Kirim Pesan
+      </h3>
+
+      <form>
+
+        <!-- Nama & Email -->
+
+        <div class="row">
+
+          <div class="col-md-6 mb-3">
+
+            <label class="form-label fw-semibold">
+              Nama
+            </label>
+
+            <input type="text"
+                   class="form-control rounded-3"
+                   placeholder="Nama kamu">
+
+          </div>
+
+
+          <div class="col-md-6 mb-3">
+
+            <label class="form-label fw-semibold">
+              Email
+            </label>
+
+            <input type="email"
+                   class="form-control rounded-3"
+                   placeholder="email@email.com">
+
+          </div>
+
+        </div>
+
+
+        <!-- Pesan -->
+
+        <div class="mb-4">
+
+          <label class="form-label fw-semibold">
+            Pesan
+          </label>
+
+          <textarea class="form-control rounded-3"
+                    rows="5"
+                    placeholder="Tulis pesan kamu di sini..."></textarea>
+
+        </div>
+
+
+        <!-- Tombol -->
+
+        <button type="submit"
+                class="btn btn-primary rounded-3 px-4">
+
+          <i class="bi bi-send me-2"></i>
+          Kirim Pesan
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer class="text-center">
+
+    <div class="container">
+
+      <p class="mb-0">
+        © 2026 Jeni Permata Putri
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
