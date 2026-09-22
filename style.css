@@ -1,0 +1,170 @@
+/* =========================
+   WARNA UTAMA WEBSITE
+   ========================= */
+
+:root {
+  --pink: #d98b8b;
+  --pink-muda: #f8e1e1;
+  --pink-tua: #c87575;
+  --cream: #fff8f5;
+  --text: #5f4b4b;
+}
+
+/* Body */
+body {
+  color: var(--text);
+  background-color: #ffffff;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+  background-color: var(--pink) !important;
+}
+
+/* =========================
+   JUMBOTRON / HOME
+   ========================= */
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: var(--pink-muda);
+}
+
+/* =========================
+   SEMUA SECTION
+   ========================= */
+
+section {
+  padding-top: 6rem;
+}
+
+/* =========================
+   HAL YANG SAYA SUKA
+   ========================= */
+
+#Project {
+  background-color: var(--pink-muda);
+}
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* =========================
+   TOMBOL
+   ========================= */
+
+.btn-primary {
+  background-color: var(--pink) !important;
+  border-color: var(--pink) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--pink-tua) !important;
+  border-color: var(--pink-tua) !important;
+}
+
+/* =========================
+   BADGE
+   ========================= */
+
+.badge.bg-primary {
+  background-color: var(--pink) !important;
+}
+
+/* =========================
+   KENALAN YUK
+   ========================= */
+
+.kenalan-card {
+  background-color: var(--pink) !important;
+  color: white !important;
+  padding: 40px;
+  border-radius: 20px;
+  min-height: 400px;
+}
+
+.kenalan-card h3 {
+  color: white !important;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.kenalan-card p {
+  color: white !important;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   IKON / LINK DI KENALAN
+   ========================= */
+
+.kenalan-card i {
+  color: white !important;
+}
+
+/* =========================
+   INPUT FORM
+   ========================= */
+
+.form-control:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 0.2rem rgba(217, 139, 139, 0.25);
+}
+
+/* =========================
+   LINK NAVBAR
+   ========================= */
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ffecec !important;
+}
+
+.navbar .navbar-brand {
+  color: white !important;
+}
+
+/* ================= WISHLIST ================= */
+
+#wishlist .card {
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#wishlist .card-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+#wishlist .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#wishlist .card-title {
+  margin-bottom: 12px;
+}
+
+#wishlist .card-text {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
