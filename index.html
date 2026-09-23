@@ -1,605 +1,973 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Portfolio | Jeni Permata Putri</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <!-- Bootstrap -->
+  <title>Jeni Permata Putri | Portfolio</title>
+
+
+  <!-- =========================
+       BOOTSTRAP
+  ========================== -->
+
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
 
-  <!-- Bootstrap Icons -->
+
+  <!-- =========================
+       BOOTSTRAP ICONS
+  ========================== -->
+
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
   >
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+
+  <!-- =========================
+       STYLE CSS
+  ========================== -->
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
 </head>
+
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
+  <!-- ==================================================
+       NAVBAR
+  =================================================== -->
 
-    <a class="navbar-brand" href="#home">
-      Jeni<span>.</span>
-    </a>
+  <nav class="navbar navbar-expand-lg fixed-top">
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
 
-    <div class="collapse navbar-collapse" id="navbarNav">
+      <a
+        class="navbar-brand"
+        href="#home"
+      >
+        Jeni<span>.</span>
+      </a>
 
-      <ul class="navbar-nav ms-auto">
 
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
 
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About Me</a>
-        </li>
+        <span class="navbar-toggler-icon"></span>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#Project">Favorite</a>
-        </li>
+      </button>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#wishlist">Wishlist</a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+      >
 
-      </ul>
+        <ul class="navbar-nav ms-auto">
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="#home"
+            >
+              Home
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="#about"
+            >
+              About Me
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="#favorite"
+            >
+              Hal yang Saya Suka
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="#wishlist"
+            >
+              Wishlist
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="#contact"
+            >
+              Contact
+            </a>
+
+          </li>
+
+
+        </ul>
+
+      </div>
 
     </div>
-  </div>
-</nav>
+
+  </nav>
 
 
-<!-- ================= HOME ================= -->
 
-<section id="home" class="hero">
+  <!-- ==================================================
+       HOME
+  =================================================== -->
 
-  <div class="container">
+  <section
+    id="home"
+    class="hero"
+  >
 
-    <div class="row align-items-center justify-content-center">
+    <div class="hero-decoration decoration-one"></div>
 
-      <div class="col-lg-6 text-center">
+    <div class="hero-decoration decoration-two"></div>
 
-        <div class="profile-wrapper">
-          <img
-            src="img/jeni.jpeg"
-            alt="Jeni Permata Putri"
-            class="profile-img"
-          >
+
+    <div class="container">
+
+      <div class="hero-content">
+
+
+        <!-- FOTO -->
+
+        <div class="profile-container">
+
+          <div class="profile-circle">
+
+            <img
+              src="img/jeni.jpeg"
+              alt="Foto Jeni Permata Putri"
+              class="profile-image"
+            >
+
+          </div>
+
+          <div class="profile-dot"></div>
+
         </div>
 
-        <p class="small-title">
+
+        <!-- TEXT -->
+
+        <p class="hero-small-text">
           HELLO, I'M
         </p>
+
 
         <h1>
           Jeni Permata Putri
         </h1>
 
-        <p class="hero-description">
-          Pecinta Game <span>•</span> Kulineran
+
+        <p class="hero-subtitle">
+
+          Pecinta Game
+
+          <span>•</span>
+
+          Kulineran
+
         </p>
 
-        <a href="#about" class="main-btn">
+
+        <p class="hero-description">
+
+          Welcome to my little space.
+          <br>
+          Tempat sederhana untuk mengenal saya lebih dekat.
+
+        </p>
+
+
+        <a
+          href="#about"
+          class="hero-button"
+        >
+
           Kenal Lebih Dekat
+
           <i class="bi bi-arrow-down"></i>
+
         </a>
 
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="section">
-
-  <div class="container">
-
-    <div class="section-heading text-center">
-
-      <span>ABOUT ME</span>
-
-      <h2>
-        Sedikit Tentang Saya
-      </h2>
-
-      <p>
-        Mengenal saya lebih dekat melalui hal-hal sederhana
-        yang saya sukai.
-      </p>
-
-    </div>
-
-
-    <div class="row justify-content-center g-4">
-
-      <div class="col-lg-5">
-
-        <div class="about-card">
-
-          <div class="icon-box">
-            <i class="bi bi-person-heart"></i>
-          </div>
-
-          <h4>Halo, saya Jeni!</h4>
-
-          <p>
-            Halo! Nama saya Jeni. Saya adalah pribadi yang suka
-            mencoba hal baru, menikmati waktu bersama orang-orang
-            terdekat, dan terus belajar untuk menjadi lebih baik.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-lg-5">
-
-        <div class="about-card">
-
-          <div class="icon-box">
-            <i class="bi bi-stars"></i>
-          </div>
-
-          <h4>Hal yang Saya Sukai</h4>
-
-          <p>
-            Saya suka menghabiskan waktu dengan hal-hal yang saya
-            sukai, seperti bermain Free Fire, minum kopi,
-            dan makan makanan enak.
-          </p>
-
-        </div>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- ================= FAVORITE ================= -->
 
-<section id="Project" class="section favorite-section">
+  <!-- ==================================================
+       ABOUT
+  =================================================== -->
 
-  <div class="container">
+  <section
+    id="about"
+    class="section about-section"
+  >
 
-    <div class="section-heading text-center">
-
-      <span>MY FAVORITES</span>
-
-      <h2>
-        Hal yang Membuat Saya Senang
-      </h2>
-
-      <p>
-        Setiap orang memiliki hal-hal sederhana yang membuatnya senang.
-        Berikut beberapa hal yang saya sukai dan sering saya lakukan.
-      </p>
-
-    </div>
+    <div class="container">
 
 
-    <div class="row g-4">
+      <!-- SECTION TITLE -->
+
+      <div class="section-title">
+
+        <span>
+          ABOUT ME
+        </span>
+
+        <h2>
+          Sedikit Tentang Saya
+        </h2>
+
+        <p>
+          Yuk kenal lebih dekat dengan saya melalui
+          cerita sederhana ini.
+        </p>
+
+      </div>
 
 
-      <!-- FREE FIRE -->
+      <!-- ABOUT CARDS -->
 
-      <div class="col-lg-4 col-md-6">
+      <div class="row g-4 justify-content-center">
 
-        <div class="favorite-card">
 
-          <div class="card-image">
+        <!-- CARD 1 -->
 
-            <img
-              src="img/projects/ff.jpeg"
-              alt="Free Fire"
-            >
+        <div class="col-lg-5 col-md-6">
 
-            <span class="category">
-              GAME
-            </span>
+          <div class="about-card">
 
-          </div>
 
-          <div class="card-content">
+            <div class="about-icon">
 
-            <div class="card-icon">
-              <i class="bi bi-controller"></i>
+              <i class="bi bi-person-heart"></i>
+
             </div>
 
-            <h4>Free Fire</h4>
+
+            <h3>
+              Halo, saya Jeni!
+            </h3>
+
 
             <p>
-              Saya suka bermain Free Fire di waktu luang.
-              Bermain game ini menjadi salah satu cara saya
-              untuk bersantai dan menghilangkan rasa bosan.
+
+              Halo! Nama saya Jeni.
+              Saya adalah pribadi yang suka mencoba hal baru,
+              menikmati waktu bersama orang-orang terdekat,
+              dan terus belajar untuk menjadi lebih baik.
+
             </p>
+
 
           </div>
 
         </div>
 
-      </div>
 
 
-      <!-- KOPI -->
+        <!-- CARD 2 -->
 
-      <div class="col-lg-4 col-md-6">
+        <div class="col-lg-5 col-md-6">
 
-        <div class="favorite-card">
+          <div class="about-card">
 
-          <div class="card-image">
 
-            <img
-              src="img/projects/kopi.jpeg"
-              alt="Kopi"
-            >
+            <div class="about-icon">
 
-            <span class="category">
-              DRINK
-            </span>
+              <i class="bi bi-stars"></i>
 
-          </div>
-
-          <div class="card-content">
-
-            <div class="card-icon">
-              <i class="bi bi-cup-hot"></i>
             </div>
 
-            <h4>Kopi</h4>
+
+            <h3>
+              Hal yang Saya Sukai
+            </h3>
+
 
             <p>
-              Selain bermain Free Fire, saya juga suka menikmati kopi.
-              Kopi menjadi salah satu minuman favorit saya ketika
-              sedang bersantai dan mempunyai waktu luang.
+
+              Saya suka menghabiskan waktu dengan hal-hal
+              yang saya sukai, seperti bermain Free Fire,
+              minum kopi, dan makan makanan enak.
+
             </p>
+
 
           </div>
 
         </div>
 
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==================================================
+       FAVORITE
+  =================================================== -->
+
+  <section
+    id="favorite"
+    class="section favorite-section"
+  >
+
+    <div class="container">
+
+
+      <!-- TITLE -->
+
+      <div class="section-title">
+
+        <span>
+          MY FAVORITES
+        </span>
+
+        <h2>
+          Hal yang Membuat Saya Senang
+        </h2>
+
+        <p>
+
+          Setiap orang memiliki hal-hal sederhana
+          yang membuatnya senang.
+
+          <br>
+
+          Berikut beberapa hal yang saya sukai
+          dan sering saya lakukan.
+
+        </p>
+
       </div>
 
 
-      <!-- MAKANAN -->
 
-      <div class="col-lg-4 col-md-6">
+      <!-- CARDS -->
 
-        <div class="favorite-card">
+      <div class="row g-4">
 
-          <div class="card-image">
 
-            <img
-              src="img/projects/makanan.jpeg"
-              alt="Makanan Favorit"
-            >
+        <!-- =========================
+             FREE FIRE
+        ========================== -->
 
-            <span class="category">
-              FOOD
-            </span>
+        <div class="col-lg-4 col-md-6">
 
-          </div>
+          <div class="favorite-card">
 
-          <div class="card-content">
 
-            <div class="card-icon">
-              <i class="bi bi-emoji-heart-eyes"></i>
+            <div class="favorite-image">
+
+              <img
+                src="img/projects/ff.jpeg"
+                alt="Free Fire"
+              >
+
+
+              <span class="image-label">
+                GAME
+              </span>
+
             </div>
 
-            <h4>Makanan Favorit</h4>
 
-            <p>
-              Saya juga sangat suka makan. Mencoba berbagai macam
-              makanan menjadi salah satu hal sederhana yang bisa
-              membuat saya senang.
-            </p>
+            <div class="favorite-content">
+
+
+              <div class="favorite-icon">
+
+                <i class="bi bi-controller"></i>
+
+              </div>
+
+
+              <h3>
+                Free Fire
+              </h3>
+
+
+              <p>
+
+                Saya suka bermain Free Fire
+                di waktu luang.
+
+                Bermain game ini menjadi salah satu
+                cara saya untuk bersantai dan
+                menghilangkan rasa bosan.
+
+              </p>
+
+
+            </div>
 
           </div>
 
         </div>
 
+
+
+        <!-- =========================
+             KOPI
+        ========================== -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="favorite-card">
+
+
+            <div class="favorite-image">
+
+              <img
+                src="img/projects/kopi.jpeg"
+                alt="Kopi"
+              >
+
+
+              <span class="image-label">
+                DRINK
+              </span>
+
+            </div>
+
+
+            <div class="favorite-content">
+
+
+              <div class="favorite-icon">
+
+                <i class="bi bi-cup-hot"></i>
+
+              </div>
+
+
+              <h3>
+                Kopi
+              </h3>
+
+
+              <p>
+
+                Selain bermain Free Fire,
+                saya juga suka menikmati kopi.
+
+                Kopi menjadi salah satu minuman
+                favorit saya ketika sedang bersantai
+                dan mempunyai waktu luang.
+
+              </p>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             MAKANAN
+        ========================== -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="favorite-card">
+
+
+            <div class="favorite-image">
+
+              <img
+                src="img/projects/makanan.jpeg"
+                alt="Makanan Favorit"
+              >
+
+
+              <span class="image-label">
+                FOOD
+              </span>
+
+            </div>
+
+
+            <div class="favorite-content">
+
+
+              <div class="favorite-icon">
+
+                <i class="bi bi-emoji-heart-eyes"></i>
+
+              </div>
+
+
+              <h3>
+                Makanan Favorit
+              </h3>
+
+
+              <p>
+
+                Saya juga sangat suka makan.
+
+                Mencoba berbagai macam makanan
+                menjadi salah satu hal sederhana
+                yang bisa membuat saya senang.
+
+              </p>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- ================= WISHLIST ================= -->
 
-<section id="wishlist" class="section">
+  <!-- ==================================================
+       WISHLIST
+  =================================================== -->
 
-  <div class="container">
+  <section
+    id="wishlist"
+    class="section wishlist-section"
+  >
 
-    <div class="section-heading text-center">
+    <div class="container">
 
-      <span>MY DREAMS</span>
 
-      <h2>
-        Wishlist
-      </h2>
+      <!-- TITLE -->
+
+      <div class="section-title">
+
+        <span>
+          MY DREAMS
+        </span>
+
+        <h2>
+          Wishlist
+        </h2>
+
+        <p>
+
+          Beberapa kendaraan yang menjadi
+          impian saya di masa depan.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- WISHLIST CARDS -->
+
+      <div class="row g-4">
+
+
+        <!-- =========================
+             NINJA SS
+        ========================== -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="dream-card">
+
+
+            <div class="dream-image">
+
+              <img
+                src="img/wishlist/ninja ss.jpeg"
+                alt="Ninja SS"
+              >
+
+
+              <span>
+                DREAM
+              </span>
+
+            </div>
+
+
+            <div class="dream-content">
+
+              <h3>
+                NINJA SS
+              </h3>
+
+
+              <p>
+
+                Ninja SS menjadi salah satu motor
+                yang saya inginkan.
+
+                Saya suka dengan bentuknya yang khas
+                dan tampilannya yang terlihat keren.
+
+                Memiliki motor ini menjadi salah satu
+                wishlist yang ingin saya wujudkan ketika
+                sudah mempunyai kesempatan dan
+                rezeki yang cukup.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             FORTUNER
+        ========================== -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="dream-card">
+
+
+            <div class="dream-image">
+
+              <img
+                src="img/wishlist/fortuner.jpeg"
+                alt="Fortuner"
+              >
+
+
+              <span>
+                DREAM
+              </span>
+
+            </div>
+
+
+            <div class="dream-content">
+
+              <h3>
+                FORTUNER
+              </h3>
+
+
+              <p>
+
+                Fortuner juga termasuk salah satu
+                kendaraan yang saya impikan.
+
+                Saya suka melihat desainnya yang
+                terlihat gagah dan nyaman digunakan
+                untuk perjalanan.
+
+                Suatu saat nanti, saya ingin bisa
+                memiliki mobil ini dari hasil usaha
+                dan kerja keras saya sendiri.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             RX KING
+        ========================== -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="dream-card">
+
+
+            <div class="dream-image">
+
+              <img
+                src="img/wishlist/rx king.jpeg"
+                alt="RX King"
+              >
+
+
+              <span>
+                DREAM
+              </span>
+
+            </div>
+
+
+            <div class="dream-content">
+
+              <h3>
+                RX KING
+              </h3>
+
+
+              <p>
+
+                RX King merupakan salah satu motor
+                yang menurut saya memiliki karakter
+                yang berbeda.
+
+                Walaupun termasuk motor lama,
+                tampilannya tetap menarik dan
+                mempunyai daya tarik tersendiri.
+
+                Saya berharap suatu hari nanti
+                bisa memiliki RX King sebagai salah
+                satu kendaraan yang saya sukai.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==================================================
+       CONTACT
+  =================================================== -->
+
+  <section
+    id="contact"
+    class="section contact-section"
+  >
+
+    <div class="container">
+
+
+      <!-- TITLE -->
+
+      <div class="section-title">
+
+        <span>
+          GET IN TOUCH
+        </span>
+
+        <h2>
+          Yuk Berkenalan 👋
+        </h2>
+
+        <p>
+
+          Kamu bisa menghubungi saya melalui
+          media sosial di bawah ini.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- CONTACT -->
+
+      <div class="row g-4 justify-content-center">
+
+
+        <!-- INSTAGRAM -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="contact-card">
+
+
+            <div class="social-icon instagram">
+
+              <i class="bi bi-instagram"></i>
+
+            </div>
+
+
+            <h3>
+              Instagram
+            </h3>
+
+
+            <p>
+              @jeni.permataputri
+            </p>
+
+
+            <a
+              href="https://www.instagram.com/jeni.permataputri/"
+              target="_blank"
+              class="contact-button"
+            >
+
+              Kunjungi Instagram
+
+              <i class="bi bi-arrow-up-right"></i>
+
+            </a>
+
+
+          </div>
+
+        </div>
+
+
+
+        <!-- WHATSAPP -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <div class="contact-card">
+
+
+            <div class="social-icon whatsapp">
+
+              <i class="bi bi-whatsapp"></i>
+
+            </div>
+
+
+            <h3>
+              WhatsApp
+            </h3>
+
+
+            <p>
+              083199216379
+            </p>
+
+
+            <a
+              href="https://wa.me/6283199216379"
+              target="_blank"
+              class="contact-button"
+            >
+
+              Chat WhatsApp
+
+              <i class="bi bi-arrow-up-right"></i>
+
+            </a>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==================================================
+       FOOTER
+  =================================================== -->
+
+  <footer>
+
+    <div class="container">
+
 
       <p>
-        Beberapa kendaraan yang menjadi impian saya di masa depan.
+        © 2026
+        <strong>
+          Jeni Permata Putri
+        </strong>
       </p>
 
-    </div>
 
+      <span>
+        Made with ♡
+      </span>
 
-    <div class="row g-4">
-
-
-      <!-- NINJA SS -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="dream-card">
-
-          <div class="dream-image">
-
-            <img
-              src="img/wishlist/ninja ss.jpeg"
-              alt="Ninja SS"
-            >
-
-            <span>
-              DREAM
-            </span>
-
-          </div>
-
-          <div class="dream-content">
-
-            <h4>NINJA SS</h4>
-
-            <p>
-              Ninja SS menjadi salah satu motor yang saya inginkan.
-              Saya suka dengan bentuknya yang khas dan tampilannya
-              yang terlihat keren. Memiliki motor ini menjadi salah
-              satu wishlist yang ingin saya wujudkan ketika sudah
-              mempunyai kesempatan dan rezeki yang cukup.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- FORTUNER -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="dream-card">
-
-          <div class="dream-image">
-
-            <img
-              src="img/wishlist/fortuner.jpeg"
-              alt="Fortuner"
-            >
-
-            <span>
-              DREAM
-            </span>
-
-          </div>
-
-          <div class="dream-content">
-
-            <h4>FORTUNER</h4>
-
-            <p>
-              Fortuner juga termasuk salah satu kendaraan yang saya
-              impikan. Saya suka melihat desainnya yang terlihat gagah
-              dan nyaman digunakan untuk perjalanan. Suatu saat nanti,
-              saya ingin bisa memiliki mobil ini dari hasil usaha dan
-              kerja keras saya sendiri.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- RX KING -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="dream-card">
-
-          <div class="dream-image">
-
-            <img
-              src="img/wishlist/rx king.jpeg"
-              alt="RX King"
-            >
-
-            <span>
-              DREAM
-            </span>
-
-          </div>
-
-          <div class="dream-content">
-
-            <h4>RX KING</h4>
-
-            <p>
-              RX King merupakan salah satu motor yang menurut saya
-              memiliki karakter yang berbeda. Walaupun termasuk motor
-              lama, tampilannya tetap menarik dan mempunyai daya tarik
-              tersendiri. Saya berharap suatu hari nanti bisa memiliki
-              RX King sebagai salah satu kendaraan yang saya sukai.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
 
     </div>
 
-  </div>
-
-</section>
+  </footer>
 
 
-<!-- ================= CONTACT ================= -->
 
-<section id="contact" class="section contact-section">
+  <!-- ==================================================
+       BOOTSTRAP JS
+  =================================================== -->
 
-  <div class="container">
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
 
-    <div class="section-heading text-center">
-
-      <span>GET IN TOUCH</span>
-
-      <h2>
-        Yuk Berkenalan 👋
-      </h2>
-
-      <p>
-        Kamu bisa menghubungi saya melalui media sosial
-        di bawah ini.
-      </p>
-
-    </div>
-
-
-    <div class="row justify-content-center g-4">
-
-
-      <!-- INSTAGRAM -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="contact-card">
-
-          <div class="social-icon instagram">
-            <i class="bi bi-instagram"></i>
-          </div>
-
-          <h4>Instagram</h4>
-
-          <p>
-            @jeni.permataputri
-          </p>
-
-          <a
-            href="https://www.instagram.com/jeni.permataputri/"
-            target="_blank"
-            class="contact-btn"
-          >
-            Kunjungi Instagram
-            <i class="bi bi-arrow-up-right"></i>
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- WHATSAPP -->
-
-      <div class="col-lg-4 col-md-6">
-
-        <div class="contact-card">
-
-          <div class="social-icon whatsapp">
-            <i class="bi bi-whatsapp"></i>
-          </div>
-
-          <h4>WhatsApp</h4>
-
-          <p>
-            083199216379
-          </p>
-
-          <a
-            href="https://wa.me/6283199216379"
-            target="_blank"
-            class="contact-btn"
-          >
-            Chat WhatsApp
-            <i class="bi bi-arrow-up-right"></i>
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-  <div class="container">
-
-    <p>
-      © 2026 <strong>Jeni Permata Putri</strong>
-    </p>
-
-    <span>
-      Made with ♡
-    </span>
-
-  </div>
-
-</footer>
-
-
-<!-- Bootstrap JS -->
-
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-</script>
 
 </body>
+
 </html>
