@@ -1,170 +1,1320 @@
-/* =========================
-   WARNA UTAMA WEBSITE
-   ========================= */
+/* =========================================================
+   JENI PERMATA PUTRI — MINIMALIST PORTFOLIO
+   STYLE.CSS FULL
+========================================================= */
+
+
+/* =========================================================
+   1. ROOT / COLOR
+========================================================= */
 
 :root {
-  --pink: #d98b8b;
-  --pink-muda: #f8e1e1;
-  --pink-tua: #c87575;
-  --cream: #fff8f5;
-  --text: #5f4b4b;
+  --pink: #d889a2;
+  --pink-dark: #c56f8b;
+  --pink-light: #f8e9ee;
+  --pink-soft: #fff7f9;
+
+  --dark: #292529;
+  --dark-soft: #454047;
+
+  --gray: #777177;
+  --gray-light: #aaa3a8;
+
+  --white: #ffffff;
+  --light: #faf8f9;
+  --border: #eee5e8;
+
+  --green: #55a878;
+
+  --shadow-sm: 0 8px 25px rgba(70, 40, 50, 0.06);
+  --shadow-md: 0 15px 40px rgba(70, 40, 50, 0.09);
+  --shadow-lg: 0 25px 60px rgba(70, 40, 50, 0.12);
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 30px;
 }
 
-/* Body */
+
+/* =========================================================
+   2. RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
-  color: var(--text);
-  background-color: #ffffff;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
-/* =========================
-   NAVBAR
-   ========================= */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--pink-light);
+  color: var(--pink-dark);
+}
+
+
+/* =========================================================
+   3. SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf7f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfb4c2;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink);
+}
+
+
+/* =========================================================
+   4. NAVBAR
+========================================================= */
 
 .navbar {
-  background-color: var(--pink) !important;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(216, 137, 162, 0.12);
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    padding 0.3s ease;
+
+  z-index: 9999;
 }
 
-/* =========================
-   JUMBOTRON / HOME
-   ========================= */
-
-.jumbotron {
-  padding-top: 6rem;
-  background-color: var(--pink-muda);
+.navbar-brand {
+  color: var(--dark) !important;
+  font-size: 1.55rem;
+  font-weight: 750;
+  letter-spacing: -1px;
 }
 
-/* =========================
-   SEMUA SECTION
-   ========================= */
-
-section {
-  padding-top: 6rem;
+.navbar-brand span {
+  color: var(--pink);
 }
 
-/* =========================
-   HAL YANG SAYA SUKA
-   ========================= */
-
-#Project {
-  background-color: var(--pink-muda);
+.navbar-nav {
+  align-items: center;
+  gap: 5px;
 }
 
-/* =========================
-   CARD
-   ========================= */
+.nav-link {
+  position: relative;
 
-.card {
-  border: none;
-  border-radius: 15px;
+  color: #6d666b !important;
+
+  font-size: 0.88rem;
+  font-weight: 500;
+
+  padding: 8px 14px !important;
+
+  border-radius: 50px;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--pink-dark) !important;
+  background: var(--pink-soft);
+}
+
+.nav-link:active {
+  transform: scale(0.96);
+}
+
+
+/* MOBILE NAVBAR */
+
+.navbar-toggler {
+  border: 1px solid var(--border);
+  background: var(--white);
+
+  padding: 7px 10px;
+
+  border-radius: 11px;
+
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+
+/* =========================================================
+   5. HERO / HOME
+========================================================= */
+
+.hero {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 130px 20px 90px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 25%,
+      #fff0f4 0%,
+      #fff7f9 32%,
+      #ffffff 72%
+    );
+
   overflow: hidden;
 }
 
-/* =========================
-   TOMBOL
-   ========================= */
 
-.btn-primary {
-  background-color: var(--pink) !important;
-  border-color: var(--pink) !important;
+/* DECORATIVE CIRCLES */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  top: -150px;
+  left: -120px;
+
+  background: var(--pink-light);
+
+  border-radius: 50%;
+
+  opacity: 0.55;
 }
 
-.btn-primary:hover {
-  background-color: var(--pink-tua) !important;
-  border-color: var(--pink-tua) !important;
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  right: -100px;
+  bottom: -100px;
+
+  background: #fff0f4;
+
+  border-radius: 50%;
+
+  opacity: 0.7;
 }
 
-/* =========================
-   BADGE
-   ========================= */
 
-.badge.bg-primary {
-  background-color: var(--pink) !important;
+/* HERO CONTENT */
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
-/* =========================
-   KENALAN YUK
-   ========================= */
-
-.kenalan-card {
-  background-color: var(--pink) !important;
-  color: white !important;
-  padding: 40px;
-  border-radius: 20px;
-  min-height: 400px;
+.hero .row {
+  min-height: 75vh;
 }
 
-.kenalan-card h3 {
-  color: white !important;
-  font-weight: bold;
+
+/* PROFILE */
+
+.profile-wrapper {
+  display: inline-block;
+
+  position: relative;
+
   margin-bottom: 25px;
 }
 
-.kenalan-card p {
-  color: white !important;
-  font-size: 17px;
-  margin-bottom: 20px;
+.profile-wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  width: 210px;
+  height: 210px;
+
+  top: 10px;
+  left: 10px;
+
+  background: var(--pink-light);
+
+  border-radius: 50%;
+
+  z-index: 0;
 }
 
-/* =========================
-   IKON / LINK DI KENALAN
-   ========================= */
+.profile-wrapper::after {
+  content: "";
 
-.kenalan-card i {
-  color: white !important;
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+
+  right: 5px;
+  top: 25px;
+
+  background: var(--pink);
+
+  border-radius: 50%;
+
+  border: 4px solid white;
+
+  z-index: 3;
 }
 
-/* =========================
-   INPUT FORM
-   ========================= */
+.profile-img {
+  position: relative;
+  z-index: 2;
 
-.form-control:focus {
-  border-color: var(--pink);
-  box-shadow: 0 0 0 0.2rem rgba(217, 139, 139, 0.25);
-}
+  width: 190px;
+  height: 190px;
 
-/* =========================
-   LINK NAVBAR
-   ========================= */
-
-.navbar .nav-link {
-  color: white !important;
-}
-
-.navbar .nav-link:hover {
-  color: #ffecec !important;
-}
-
-.navbar .navbar-brand {
-  color: white !important;
-}
-
-/* ================= WISHLIST ================= */
-
-#wishlist .card {
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-#wishlist .card-img-top {
-  width: 100%;
-  height: 230px;
   object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 7px solid white;
+
+  box-shadow:
+    0 15px 45px rgba(80, 45, 60, 0.12),
+    0 0 0 1px rgba(216, 137, 162, 0.08);
 }
 
-#wishlist .card-body {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+
+/* HERO SMALL TITLE */
+
+.small-title {
+  color: var(--pink);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 8px;
 }
 
-#wishlist .card-title {
+
+/* HERO TITLE */
+
+.hero h1 {
+  margin-bottom: 10px;
+
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+
+  font-weight: 750;
+
+  line-height: 1.1;
+
+  letter-spacing: -2.5px;
+
+  color: var(--dark);
+}
+
+
+/* HERO DESCRIPTION */
+
+.hero-description {
+  color: var(--gray);
+
+  font-size: 1.08rem;
+
+  margin-bottom: 30px;
+}
+
+.hero-description span {
+  color: var(--pink);
+
+  margin: 0 8px;
+}
+
+
+/* MAIN BUTTON */
+
+.main-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 13px 23px;
+
+  background: var(--dark);
+
+  color: white;
+
+  border-radius: 50px;
+
+  font-size: 0.88rem;
+
+  font-weight: 600;
+
+  box-shadow: 0 8px 20px rgba(41, 37, 41, 0.10);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.main-btn i {
+  transition: transform 0.3s ease;
+}
+
+.main-btn:hover {
+  color: white;
+
+  background: var(--pink);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px rgba(216, 137, 162, 0.28);
+}
+
+.main-btn:hover i {
+  transform: translateY(3px);
+}
+
+
+/* =========================================================
+   6. GENERAL SECTION
+========================================================= */
+
+.section {
+  padding: 100px 0;
+
+  position: relative;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+  max-width: 700px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.section-heading span {
+  display: inline-block;
+
+  color: var(--pink);
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 8px;
+}
+
+.section-heading h2 {
   margin-bottom: 12px;
+
+  color: var(--dark);
+
+  font-size: clamp(2rem, 4vw, 2.8rem);
+
+  font-weight: 750;
+
+  line-height: 1.2;
+
+  letter-spacing: -1.2px;
 }
 
-#wishlist .card-text {
-  color: #777;
-  line-height: 1.6;
-  margin-bottom: 0;
+.section-heading p {
+  margin: 0 auto;
+
+  max-width: 620px;
+
+  color: var(--gray);
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   7. ABOUT SECTION
+========================================================= */
+
+#about {
+  background: var(--white);
+}
+
+
+/* ABOUT CARD */
+
+.about-card {
+  height: 100%;
+
+  padding: 35px;
+
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #efd1db;
+
+  box-shadow: var(--shadow-md);
+}
+
+
+/* ABOUT ICON */
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  color: var(--pink-dark);
+
+  background: var(--pink-light);
+
+  border-radius: 15px;
+
+  font-size: 1.3rem;
+}
+
+.about-card h4 {
+  margin-bottom: 12px;
+
+  color: var(--dark);
+
+  font-size: 1.2rem;
+
+  font-weight: 650;
+}
+
+.about-card p {
+  margin: 0;
+
+  color: var(--gray);
+
+  font-size: 0.93rem;
+}
+
+
+/* =========================================================
+   8. FAVORITE SECTION
+========================================================= */
+
+.favorite-section {
+  background: var(--light);
+}
+
+
+/* FAVORITE CARD */
+
+.favorite-card {
+  height: 100%;
+
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.favorite-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #efd1db;
+
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* FAVORITE IMAGE */
+
+.card-image {
+  height: 230px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #f4f1f2;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.3s ease;
+}
+
+.favorite-card:hover .card-image img {
+  transform: scale(1.06);
+}
+
+
+/* CATEGORY */
+
+.category {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  padding: 6px 12px;
+
+  background: rgba(255, 255, 255, 0.93);
+
+  color: var(--dark);
+
+  border-radius: 50px;
+
+  font-size: 0.64rem;
+
+  font-weight: 750;
+
+  letter-spacing: 1px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* CARD CONTENT */
+
+.card-content {
+  padding: 25px;
+}
+
+
+/* CARD ICON */
+
+.card-icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+
+  background: var(--pink-light);
+
+  color: var(--pink-dark);
+
+  border-radius: 13px;
+
+  font-size: 1.1rem;
+}
+
+.card-content h4 {
+  margin-bottom: 8px;
+
+  color: var(--dark);
+
+  font-size: 1.18rem;
+
+  font-weight: 650;
+}
+
+.card-content p {
+  margin: 0;
+
+  color: var(--gray);
+
+  font-size: 0.9rem;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   9. WISHLIST
+========================================================= */
+
+#wishlist {
+  background: var(--white);
+}
+
+
+/* DREAM CARD */
+
+.dream-card {
+  height: 100%;
+
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.dream-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #efd1db;
+
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* DREAM IMAGE */
+
+.dream-image {
+  height: 250px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #f3f0f1;
+}
+
+.dream-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.dream-card:hover .dream-image img {
+  transform: scale(1.06);
+}
+
+
+/* DREAM BADGE */
+
+.dream-image span {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  padding: 6px 12px;
+
+  color: white;
+
+  background: rgba(41, 37, 41, 0.90);
+
+  border-radius: 50px;
+
+  font-size: 0.63rem;
+
+  font-weight: 750;
+
+  letter-spacing: 1px;
+}
+
+
+/* DREAM CONTENT */
+
+.dream-content {
+  padding: 25px;
+}
+
+.dream-content h4 {
+  margin-bottom: 10px;
+
+  color: var(--dark);
+
+  font-size: 1.18rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.dream-content p {
+  margin: 0;
+
+  color: var(--gray);
+
+  font-size: 0.9rem;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   10. CONTACT
+========================================================= */
+
+.contact-section {
+  background: var(--light);
+}
+
+
+/* CONTACT CARD */
+
+.contact-card {
+  height: 100%;
+
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #efd1db;
+
+  box-shadow: var(--shadow-md);
+}
+
+
+/* SOCIAL ICON */
+
+.social-icon {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px;
+
+  border-radius: 18px;
+
+  font-size: 1.5rem;
+}
+
+
+/* INSTAGRAM */
+
+.social-icon.instagram {
+  color: #c56f8b;
+
+  background: var(--pink-light);
+}
+
+
+/* WHATSAPP */
+
+.social-icon.whatsapp {
+  color: var(--green);
+
+  background: #eaf7ef;
+}
+
+
+/* CONTACT TEXT */
+
+.contact-card h4 {
+  margin-bottom: 5px;
+
+  color: var(--dark);
+
+  font-size: 1.15rem;
+
+  font-weight: 650;
+}
+
+.contact-card p {
+  margin-bottom: 20px;
+
+  color: var(--gray);
+
+  font-size: 0.9rem;
+}
+
+
+/* CONTACT BUTTON */
+
+.contact-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 10px 17px;
+
+  color: var(--dark);
+
+  background: white;
+
+  border: 1px solid var(--border);
+
+  border-radius: 50px;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-btn i {
+  transition: transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  color: white;
+
+  background: var(--dark);
+
+  border-color: var(--dark);
+
+  transform: translateY(-2px);
+}
+
+.contact-btn:hover i {
+  transform: translate(2px, -2px);
+}
+
+
+/* =========================================================
+   11. FOOTER
+========================================================= */
+
+footer {
+  padding: 27px 0;
+
+  background: #252225;
+
+  color: white;
+}
+
+footer .container {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 0;
+
+  color: #dedadd;
+
+  font-size: 0.83rem;
+}
+
+footer p strong {
+  color: white;
+}
+
+footer span {
+  color: #aaa5a8;
+
+  font-size: 0.78rem;
+}
+
+
+/* =========================================================
+   12. RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .navbar {
+    padding: 13px 0;
+  }
+
+  .navbar-collapse {
+    padding-top: 15px;
+  }
+
+  .navbar-nav {
+    align-items: stretch;
+
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    text-align: center;
+
+    padding: 10px !important;
+  }
+
+
+  .hero {
+    min-height: 90vh;
+
+    padding-top: 120px;
+  }
+
+  .hero .row {
+    min-height: auto;
+  }
+
+
+  .section {
+    padding: 85px 0;
+  }
+
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+
+  .card-image {
+    height: 220px;
+  }
+
+
+  .dream-image {
+    height: 230px;
+  }
+
+}
+
+
+/* =========================================================
+   13. RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+  body {
+    font-size: 14px;
+  }
+
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    min-height: 100vh;
+
+    padding: 115px 20px 70px;
+  }
+
+  .hero::before {
+    width: 220px;
+    height: 220px;
+
+    top: -120px;
+    left: -100px;
+  }
+
+  .hero::after {
+    width: 180px;
+    height: 180px;
+
+    right: -90px;
+    bottom: -80px;
+  }
+
+
+  .profile-wrapper {
+    margin-bottom: 22px;
+  }
+
+  .profile-img {
+    width: 160px;
+    height: 160px;
+
+    border-width: 6px;
+  }
+
+  .profile-wrapper::before {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile-wrapper::after {
+    width: 15px;
+    height: 15px;
+
+    right: 2px;
+    top: 18px;
+  }
+
+
+  .small-title {
+    font-size: 0.65rem;
+
+    letter-spacing: 3px;
+  }
+
+
+  .hero h1 {
+    font-size: 2.35rem;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+
+  .main-btn {
+    padding: 12px 20px;
+
+    font-size: 0.82rem;
+  }
+
+
+  /* SECTION */
+
+  .section {
+    padding: 75px 20px;
+  }
+
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+
+  .section-heading span {
+    font-size: 0.65rem;
+
+    letter-spacing: 2.5px;
+  }
+
+
+  .section-heading h2 {
+    font-size: 2rem;
+
+    letter-spacing: -0.8px;
+  }
+
+
+  .section-heading p {
+    font-size: 0.88rem;
+  }
+
+
+  /* ABOUT */
+
+  .about-card {
+    padding: 27px;
+
+    border-radius: 20px;
+  }
+
+
+  /* FAVORITE */
+
+  .favorite-card {
+    border-radius: 20px;
+  }
+
+  .card-image {
+    height: 215px;
+  }
+
+  .card-content {
+    padding: 23px;
+  }
+
+
+  /* WISHLIST */
+
+  .dream-card {
+    border-radius: 20px;
+  }
+
+  .dream-image {
+    height: 220px;
+  }
+
+  .dream-content {
+    padding: 23px;
+  }
+
+
+  /* CONTACT */
+
+  .contact-card {
+    padding: 30px 20px;
+
+    border-radius: 20px;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    padding: 23px 20px;
+  }
+
+  footer .container {
+    flex-direction: column;
+
+    gap: 5px;
+
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================================
+   14. VERY SMALL SCREEN
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .profile-img {
+    width: 145px;
+    height: 145px;
+  }
+
+  .profile-wrapper::before {
+    width: 165px;
+    height: 165px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.75rem;
+  }
+
+}
+
+
+/* =========================================================
+   15. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
 }
